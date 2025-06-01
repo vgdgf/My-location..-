@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>🌸 إلى دارين 🌸</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to right, #f8bbd0, #fce4ec);
+      color: #880e4f;
+      text-align: center;
+      overflow-x: hidden;
+    }.container {
+  padding: 50px 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.3em;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.8em;
+}
+
+.btn {
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d81b60;
+}
+
+.hidden-message {
+  display: none;
+  margin-top: 40px;
+  font-size: 1.5em;
+  color: #4a148c;
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #6a1b9a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/7v35ry.mp3" type="audio/mpeg">
+    متصفحك لا يدعم تشغيل الصوت.
+  </audio>
+  <div class="container">
+    <h1>🌸 دارين 🌸</h1>
+    <h2>أهلاً بكِ في عالمك الخاص</h2>
+    <p>هذا الموقع هدية مفاجئة، صنعتُه لأقول لكِ كم أنتِ مميزة. <br>كل لحظة بقربك لها طعم مختلف، وكل يوم معك هو هدية من الحياة ❤️</p>
+    <button class="btn" onclick="revealMessage()">اضغطي هنا للمفاجأة 🎁</button>
+    <div class="hidden-message" id="secret">
+      💌 أحببت أن أترك لك رسالة صغيرة: <br>
+      "دارين... أنتِ النور في يومي، والابتسامة في لحظتي، والحنان في عالمي. لا تنسي أبدًا كم أنتِ عظيمة في نظري ❤️"
+    </div>
+    <footer>صُنع بحب من أجلكِ، يا دارين — 𝙱𝚢 𝚁𝙰𝙼𝙸</footer>
+  </div>  <script>
+    function revealMessage() {
+      const msg = document.getElementById('secret');
+      msg.style.display = 'block';
+      msg.style.animation = 'fadeIn 1s ease-in-out';
+    }
+  </script></body>
+</html>
